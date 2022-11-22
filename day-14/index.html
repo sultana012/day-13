@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="demo">Array value</p>
+    <p id="demo1">object value</p>
+    <p id="demo2"></p>
+    <p id="demo3">value</p>
+    <script>
+        // array
+        const cars=["Sabb", "Volvo", "BMW"];
+        document.getElementById("demo").innerHTML = cars[2];
+
+        // object
+        const sultana = {FirstName:"Sultana", LastName:"Akter"};
+        document.getElementById("demo1").innerHTML = sultana.FirstName;
+
+        // function
+        function myfunction(p1, p2){
+            var multi = p1 * p2;
+            return multi;
+        }
+        document.getElementById("demo2").innerHTML = myfunction(4,3);
+
+        //2nd functio 
+        function FtoCel(fr){
+            var cel = (5/9)*(fr-32);
+            return cel;
+        }
+        document.getElementById("demo3").innerHTML = FtoCel(102);
+
+    </script> 
+</body>
+</html>
